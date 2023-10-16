@@ -1,0 +1,34 @@
+\section{Experiment C}
+
+\subsection{Design}
+This experiment is to include a flowchart in Latex.
+
+\subsection{Result}
+
+\begin{center}
+    \begin{tikzpicture}[node distance=2cm, auto]
+        \setmainfont{Hack}
+        \fontsize{9}{1em}
+
+        % define shape
+        \tikzstyle{process} = [rectangle, minimum width=2cm, minimum height=1cm, text centered, aspect=2,draw=black, fill=blue!30!black!20!]
+        \tikzstyle{test}=[diamond,aspect=2,draw=black, fill=yellow!30!black!20!]
+        \tikzstyle{round}=[rounded rectangle,aspect=2,draw=black,fill=green!30!black!20!]
+        \tikzstyle{point}=[coordinate]
+
+        % define content
+        \node (START) [process] {START};
+        \node (init) [process, below of=START, node distance=1.5cm] {i = 0};
+        % connect flow chart
+        %\draw[->] (n0.south) -- (n1); arrow
+        %\draw[-] (n0.south) -- (n1); no arrow
+        %\draw[<->] (n0.south) -- (n1.north);   double arrow
+        %\draw[<-,dashed] (n1.south) -- (n2.north); dash arrow
+        %\draw[<-] (n0.south) to node{Yes} (n1.north);  word right
+        %\draw[->] (n1.north) to node{Yes} (n0.south);  word left
+        %\draw[->] (n1.north) to[out=60,in=300] node{Yes} (n0.south);  curve
+        %\draw[->,draw=red](n2)--(n1);  line with color
+        \draw[thick, ->, >=stealth] (START) -- (init);
+        
+    \end{tikzpicture}
+\end{center}

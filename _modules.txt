@@ -1,0 +1,10 @@
+
+# to input figures
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=cm]{figures/}
+    \caption{}
+\end{figure}
+
+# to input codes
+\lstinputlisting[language=, caption=]{codes/}

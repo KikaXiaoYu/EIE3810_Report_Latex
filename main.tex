@@ -1,0 +1,49 @@
+\documentclass{LabReport}
+
+
+% import packages
+\usetikzlibrary{shapes,arrows}
+
+
+% cover information
+\CourseTitle{EIE3810 Microprocessor System Desgin \par Laboratory}
+\ReportTitle{Laboratory Report \#X}
+\StudentName{XXXXXXXXX}
+\StudentID{XXXXXXXXX}
+\ReportDate{XXXXXXXXXX}
+\Institution{The Chinese University of Hong Kong, Shenzhen}
+
+
+% start the document
+\begin{document}
+
+% make cover page
+\makeCover
+
+% set basic char layout
+\setstretch{1.5} % line spacing
+\setlength{\parskip}{0.2em} % distance between paragraphs
+\fontsize{12}{1em} % font size
+\setmainfont{Times New Roman} %  font face
+% \setlength{\spaceskip}{0.35em} % distance between char
+\justifying
+
+% introduction
+\setlength{\parindent}{0em}
+In Lab \#X, we learned about how to include figures, codes, and flowchart in Latex.
+\setlength{\parindent}{1.5em}
+
+\setlist[itemize]{topsep=0pt,partopsep=0pt,parsep=0pt,itemsep=0pt}
+\begin{itemize}[leftmargin=1em]
+    \item [$\bullet$] Experiment A: Include figures in Latex.    
+    \item [$\bullet$] Experiment B: Include codes in Latex.
+    \item [$\bullet$] Experiment C: Include flowchart in Latex.
+\end{itemize}
+
+% other contents
+\input{content/_ExperimentA.tex}
+\input{content/_ExperimentB.tex}
+\input{content/_ExperimentC.tex}
+\input{content/_Conclusion.tex}
+
+\end{document}
